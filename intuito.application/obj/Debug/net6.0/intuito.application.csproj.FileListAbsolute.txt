@@ -1,0 +1,15 @@
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\bin\Debug\net6.0\intuito.application.deps.json
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\bin\Debug\net6.0\intuito.application.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\bin\Debug\net6.0\intuito.application.pdb
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\bin\Debug\net6.0\intuito.domain.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\bin\Debug\net6.0\intuito.domain.pdb
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.csproj.AssemblyReference.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.AssemblyInfoInputs.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.AssemblyInfo.cs
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.csproj.CoreCompileInputs.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.csproj.CopyComplete
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\refint\intuito.application.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\intuito.application.pdb
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.application\obj\Debug\net6.0\ref\intuito.application.dll

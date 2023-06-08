@@ -1,0 +1,14 @@
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\bin\Debug\net6.0\intuito.domain.deps.json
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\bin\Debug\net6.0\intuito.domain.runtimeconfig.json
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\bin\Debug\net6.0\intuito.domain.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\bin\Debug\net6.0\intuito.domain.pdb
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.csproj.AssemblyReference.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.AssemblyInfoInputs.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.AssemblyInfo.cs
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.csproj.CoreCompileInputs.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\refint\intuito.domain.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.pdb
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\intuito.domain.genruntimeconfig.cache
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.domain\obj\Debug\net6.0\ref\intuito.domain.dll
