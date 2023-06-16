@@ -29,14 +29,10 @@ namespace intuito.infrastructure.ioc
             services.AddScoped<IBillboardRestRepository, BillboardRepository>();
             services.AddScoped<IBookingRestRepository, BookingRepository>();
 
-
-
-
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlServer(builderConnection.ConnectionString);
-
-            }, ServiceLifetime.Transient
+                }, ServiceLifetime.Transient
             );
 
             return services;
