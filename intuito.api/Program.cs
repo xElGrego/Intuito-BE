@@ -1,3 +1,4 @@
+using Google.Api;
 using intuito.api.Extensions;
 using intuito.api.Service;
 using intuito.infrastructure.extentions;
@@ -32,6 +33,8 @@ builder.Services.AddApplication();
 
 //Se agregar grpc
 builder.Services.AddGrpc();
+//builder.Services.AddJsonTranscoding();
+builder.Services.AddGrpcSwagger();
 builder.Services.AddGrpcHttpApi();
 
 
@@ -48,10 +51,7 @@ if (app.Environment.IsDevelopment())
 }
 
 
-//app.UseEndpoints(endpoints =>
-//{
-//     endpoints.MapGrpcService<GreeterService>();
-//});
+
 
 //Configurando HTTP request
 
@@ -63,7 +63,7 @@ app.ConfigureExceptionHandler();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseRouting();
 app.MapControllers();
 
 app.Run();

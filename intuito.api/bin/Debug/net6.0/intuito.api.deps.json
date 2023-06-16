@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "intuito.api/1.0.0": {
         "dependencies": {
+          "Google.Protobuf": "3.22.0",
           "Grpc.AspNetCore": "2.54.0",
           "Microsoft.AspNetCore.Grpc.HttpApi": "0.1.0-alpha.21317.5",
           "Microsoft.AspNetCore.Grpc.JsonTranscoding": "8.0.0-preview.5.23302.2",
+          "Microsoft.AspNetCore.Grpc.Swagger": "0.1.0-alpha.21317.5",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Swashbuckle.AspNetCore": "6.2.3",
@@ -162,6 +164,18 @@
         }
       },
       "Microsoft.AspNetCore.Grpc.JsonTranscoding/8.0.0-preview.5.23302.2": {},
+      "Microsoft.AspNetCore.Grpc.Swagger/0.1.0-alpha.21317.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Grpc.HttpApi": "0.1.0-alpha.21317.5",
+          "Swashbuckle.AspNetCore": "6.2.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Grpc.Swagger.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.100.21.31705"
+          }
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/6.0.0-rc.1.21452.15": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -925,6 +939,13 @@
       "sha512": "sha512-ixDYqO+aRIfnnhF2xojxvZpYkiWMnJeTsmv5VUCvQpoFbjfBUYkB1tBfhFWh0J3GSqPdYXT+oIBli8EeSwq1TA==",
       "path": "microsoft.aspnetcore.grpc.jsontranscoding/8.0.0-preview.5.23302.2",
       "hashPath": "microsoft.aspnetcore.grpc.jsontranscoding.8.0.0-preview.5.23302.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Grpc.Swagger/0.1.0-alpha.21317.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-83u1YaEXfy842jh2V4ZpFUSDTNR1xa1r99QGbr1lzpJm7PG/0o97LXtJJLKVux0XhjR1J4b4mCl+1nKCZhRDjQ==",
+      "path": "microsoft.aspnetcore.grpc.swagger/0.1.0-alpha.21317.5",
+      "hashPath": "microsoft.aspnetcore.grpc.swagger.0.1.0-alpha.21317.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/6.0.0-rc.1.21452.15": {
       "type": "package",

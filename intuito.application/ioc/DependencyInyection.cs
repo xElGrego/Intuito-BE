@@ -15,6 +15,8 @@ namespace veterinaria.yara.application.ioc
             services.AddScoped<ISeatRepository, InfoSeatRepository>();
             services.AddScoped<IBilboardRepository, InfoBillboardRepository>();
             services.AddScoped<IBookingRepository, InfoBookingRepository>();
+            services.AddScoped<IGreeterRepository, InfoGreeterRepository>();
+
             return services;
         }
     }

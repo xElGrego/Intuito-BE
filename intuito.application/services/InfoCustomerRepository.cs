@@ -2,7 +2,6 @@
 using intuito.application.interfaces.services;
 using intuito.application.models.DTOs;
 using intuito.domain.DTOs;
-using intuito.domain.entities;
 
 namespace intuito.application.services
 {

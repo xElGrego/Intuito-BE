@@ -25,15 +25,21 @@ namespace intuito.api.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0Ghxnb29nbGUvYXBpL2Fubm90",
-            "YXRpb25zLnByb3RvIhwKDEhlbGxvUmVxdWVzdBIMCgRuYW1lGAEgASgJIh0K",
-            "CkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCTJZCgdHcmVldGVyEk4KCFNh",
-            "eUhlbGxvEhMuZ3JlZXQuSGVsbG9SZXF1ZXN0GhEuZ3JlZXQuSGVsbG9SZXBs",
-            "eSIagtPkkwIUEhIvdjEvZ3JlZXRlci97bmFtZX1CFaoCEmludHVpdG8uYXBp",
-            "LlByb3Rvc2IGcHJvdG8z"));
+            "YXRpb25zLnByb3RvIhwKDEhlbGxvUmVxdWVzdBIMCgRuYW1lGAEgASgJIi4K",
+            "EEhlbGxvUmVxdWVzdEZyb20SDAoEbmFtZRgBIAEoCRIMCgRmcm9tGAIgASgJ",
+            "Ih0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCTKcAgoHR3JlZXRlchJW",
+            "CghTYXlIZWxsbxITLmdyZWV0LkhlbGxvUmVxdWVzdBoRLmdyZWV0LkhlbGxv",
+            "UmVwbHkiIoLT5JMCHBIaL2ludHVpdG8vdjEvZ3JlZXRlci97bmFtZX0SWwoM",
+            "U2F5SGVsbG9Gcm9tEhcuZ3JlZXQuSGVsbG9SZXF1ZXN0RnJvbRoRLmdyZWV0",
+            "LkhlbGxvUmVwbHkiH4LT5JMCGSIUL2ludHVpdG8vdjEvZ3JlZXRlci86ASoS",
+            "XAoLTnVldm9NZXRvZG8SEy5ncmVldC5IZWxsb1JlcXVlc3QaES5ncmVldC5I",
+            "ZWxsb1JlcGx5IiWC0+STAh8iGi9pbnR1aXRvL3YxL251ZXZvLWdyZWV0ZXIv",
+            "OgEqQhWqAhJpbnR1aXRvLmFwaS5Qcm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloRequest), global::intuito.api.Protos.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloRequestFrom), global::intuito.api.Protos.HelloRequestFrom.Parser, new[]{ "Name", "From" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloReply), global::intuito.api.Protos.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
@@ -233,6 +239,232 @@ namespace intuito.api.Protos {
 
   }
 
+  public sealed partial class HelloRequestFrom : pb::IMessage<HelloRequestFrom>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<HelloRequestFrom> _parser = new pb::MessageParser<HelloRequestFrom>(() => new HelloRequestFrom());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<HelloRequestFrom> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloRequestFrom() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloRequestFrom(HelloRequestFrom other) : this() {
+      name_ = other.name_;
+      from_ = other.from_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloRequestFrom Clone() {
+      return new HelloRequestFrom(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "from" field.</summary>
+    public const int FromFieldNumber = 2;
+    private string from_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string From {
+      get { return from_; }
+      set {
+        from_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as HelloRequestFrom);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(HelloRequestFrom other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (From != other.From) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (From.Length != 0) hash ^= From.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (From.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(From);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (From.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(From);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (From.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(From);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(HelloRequestFrom other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.From.Length != 0) {
+        From = other.From;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            From = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            From = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   /// The response message containing the greetings.
   /// </summary>
@@ -250,7 +482,7 @@ namespace intuito.api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[1]; }
+      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

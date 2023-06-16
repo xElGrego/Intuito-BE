@@ -2,6 +2,7 @@
 using intuito.infrastructure.data.repositories;
 using intuito.infrastructure.data.repositories.billboard;
 using intuito.infrastructure.data.repositories.booking;
+using intuito.infrastructure.data.repositories.greeter;
 using intuito.infrastructure.data.repositories.movie;
 using intuito.infrastructure.data.repositories.room;
 using intuito.infrastructure.data.repositories.seat;
@@ -28,6 +29,8 @@ namespace intuito.infrastructure.ioc
             services.AddScoped<ISeatRestRepository, SeatRepository>();
             services.AddScoped<IBillboardRestRepository, BillboardRepository>();
             services.AddScoped<IBookingRestRepository, BookingRepository>();
+            services.AddScoped<IGreeterRestRepository, GreeterRepository>();
+
 
             services.AddDbContext<DataContext>(options =>
             {
