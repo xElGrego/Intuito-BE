@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace intuito.api.Protos {
+namespace intuito.api.greeter.Protos {
   /// <summary>
   /// The greeting service definition.
   /// </summary>
@@ -49,14 +49,14 @@ namespace intuito.api.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::intuito.api.Protos.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.Protos.HelloRequest.Parser));
+    static readonly grpc::Marshaller<global::intuito.api.greeter.Protos.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.greeter.Protos.HelloRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::intuito.api.Protos.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.Protos.HelloReply.Parser));
+    static readonly grpc::Marshaller<global::intuito.api.greeter.Protos.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.greeter.Protos.HelloReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::intuito.api.Protos.HelloRequestFrom> __Marshaller_greet_HelloRequestFrom = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.Protos.HelloRequestFrom.Parser));
+    static readonly grpc::Marshaller<global::intuito.api.greeter.Protos.HelloRequestFrom> __Marshaller_greet_HelloRequestFrom = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::intuito.api.greeter.Protos.HelloRequestFrom.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply> __Method_SayHello = new grpc::Method<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply>(
+    static readonly grpc::Method<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply> __Method_SayHello = new grpc::Method<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SayHello",
@@ -64,7 +64,7 @@ namespace intuito.api.Protos {
         __Marshaller_greet_HelloReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::intuito.api.Protos.HelloRequestFrom, global::intuito.api.Protos.HelloReply> __Method_SayHelloFrom = new grpc::Method<global::intuito.api.Protos.HelloRequestFrom, global::intuito.api.Protos.HelloReply>(
+    static readonly grpc::Method<global::intuito.api.greeter.Protos.HelloRequestFrom, global::intuito.api.greeter.Protos.HelloReply> __Method_SayHelloFrom = new grpc::Method<global::intuito.api.greeter.Protos.HelloRequestFrom, global::intuito.api.greeter.Protos.HelloReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SayHelloFrom",
@@ -72,7 +72,7 @@ namespace intuito.api.Protos {
         __Marshaller_greet_HelloReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply> __Method_NuevoMetodo = new grpc::Method<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply>(
+    static readonly grpc::Method<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply> __Method_NuevoMetodo = new grpc::Method<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "NuevoMetodo",
@@ -82,7 +82,7 @@ namespace intuito.api.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::intuito.api.Protos.GreetReflection.Descriptor.Services[0]; }
+      get { return global::intuito.api.greeter.Protos.GreetReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of Greeter</summary>
@@ -96,19 +96,19 @@ namespace intuito.api.Protos {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::intuito.api.Protos.HelloReply> SayHello(global::intuito.api.Protos.HelloRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::intuito.api.greeter.Protos.HelloReply> SayHello(global::intuito.api.greeter.Protos.HelloRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::intuito.api.Protos.HelloReply> SayHelloFrom(global::intuito.api.Protos.HelloRequestFrom request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::intuito.api.greeter.Protos.HelloReply> SayHelloFrom(global::intuito.api.greeter.Protos.HelloRequestFrom request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::intuito.api.Protos.HelloReply> NuevoMetodo(global::intuito.api.Protos.HelloRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::intuito.api.greeter.Protos.HelloReply> NuevoMetodo(global::intuito.api.greeter.Protos.HelloRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -133,9 +133,9 @@ namespace intuito.api.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GreeterBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply>(serviceImpl.SayHello));
-      serviceBinder.AddMethod(__Method_SayHelloFrom, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.Protos.HelloRequestFrom, global::intuito.api.Protos.HelloReply>(serviceImpl.SayHelloFrom));
-      serviceBinder.AddMethod(__Method_NuevoMetodo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.Protos.HelloRequest, global::intuito.api.Protos.HelloReply>(serviceImpl.NuevoMetodo));
+      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply>(serviceImpl.SayHello));
+      serviceBinder.AddMethod(__Method_SayHelloFrom, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.greeter.Protos.HelloRequestFrom, global::intuito.api.greeter.Protos.HelloReply>(serviceImpl.SayHelloFrom));
+      serviceBinder.AddMethod(__Method_NuevoMetodo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::intuito.api.greeter.Protos.HelloRequest, global::intuito.api.greeter.Protos.HelloReply>(serviceImpl.NuevoMetodo));
     }
 
   }

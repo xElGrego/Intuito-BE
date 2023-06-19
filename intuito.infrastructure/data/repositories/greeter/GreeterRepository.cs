@@ -3,7 +3,7 @@ using intuito.application.interfaces.repositories;
 using intuito.application.models.DTOs;
 using intuito.application.models.exceptions;
 using Microsoft.Extensions.Configuration;
-
+using Newtonsoft.Json;
 
 namespace intuito.infrastructure.data.repositories.greeter
 {
@@ -22,7 +22,17 @@ namespace intuito.infrastructure.data.repositories.greeter
         {
             try
             {
-                //lOGICA 
+                var myData = new
+                {
+                    nombre = "Gregorio",
+                    apellido = "Avila"
+                };
+
+                //Tranform it to Json object
+                string jsonData = JsonConvert.SerializeObject(myData);
+
+                //Print the Json object
+                Console.WriteLine(jsonData);
 
             }
             catch (Exception ex)

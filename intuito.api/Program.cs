@@ -41,6 +41,8 @@ builder.Services.AddGrpcHttpApi();
 var app = builder.Build();
 
 app.MapGrpcService<GreeterService>();
+app.MapGrpcService<UserService>();
+
 
 
 // Configure the HTTP request pipeline.
@@ -50,15 +52,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-
-
 //Configurando HTTP request
 
 app.ConfigureMetricServer();
 app.ConfigureExceptionHandler();
-
-
 
 app.UseHttpsRedirection();
 

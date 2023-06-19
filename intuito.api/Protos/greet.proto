@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/api/annotations.proto";
 
-option csharp_namespace = "intuito.api.Protos";
+option csharp_namespace = "intuito.api.greeter.Protos";
 
 package greet;
 

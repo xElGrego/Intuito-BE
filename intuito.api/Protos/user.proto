@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+option csharp_namespace = "intuito.api.user.Protos";
+
+package user;
+
+
+service User {
+  rpc AddUser (UserRequest) returns (UserResponse) {
+    option (google.api.http) = {
+      post: "/intuito/v1/agregar-user/"
+      body: "*"
+    };
+  }
+
+  rpc GetUser (UserIdRequest) returns (UserIdResponse) {
+     option (google.api.http).get = "/intuito/v1/get-user/{idUser}";
+  }
+}
+
+message UserRequest {
+  string name = 1;
+  string lastName=2;
+}
+
+
+message UserResponse {
+  string message = 1;
+}
+
+message UserIdRequest{
+  string idUser = 1;
+}
+
+message UserIdResponse {
+  string name = 1;
+  string lastName=2;
+}
+
+

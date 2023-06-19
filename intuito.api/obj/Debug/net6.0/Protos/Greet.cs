@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace intuito.api.Protos {
+namespace intuito.api.greeter.Protos {
 
   /// <summary>Holder for reflection information generated from Protos/greet.proto</summary>
   public static partial class GreetReflection {
@@ -34,13 +34,13 @@ namespace intuito.api.Protos {
             "LkhlbGxvUmVwbHkiH4LT5JMCGSIUL2ludHVpdG8vdjEvZ3JlZXRlci86ASoS",
             "XAoLTnVldm9NZXRvZG8SEy5ncmVldC5IZWxsb1JlcXVlc3QaES5ncmVldC5I",
             "ZWxsb1JlcGx5IiWC0+STAh8iGi9pbnR1aXRvL3YxL251ZXZvLWdyZWV0ZXIv",
-            "OgEqQhWqAhJpbnR1aXRvLmFwaS5Qcm90b3NiBnByb3RvMw=="));
+            "OgEqQh2qAhppbnR1aXRvLmFwaS5ncmVldGVyLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloRequest), global::intuito.api.Protos.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloRequestFrom), global::intuito.api.Protos.HelloRequestFrom.Parser, new[]{ "Name", "From" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.Protos.HelloReply), global::intuito.api.Protos.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.greeter.Protos.HelloRequest), global::intuito.api.greeter.Protos.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.greeter.Protos.HelloRequestFrom), global::intuito.api.greeter.Protos.HelloRequestFrom.Parser, new[]{ "Name", "From" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::intuito.api.greeter.Protos.HelloReply), global::intuito.api.greeter.Protos.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +64,7 @@ namespace intuito.api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[0]; }
+      get { return global::intuito.api.greeter.Protos.GreetReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -253,7 +253,7 @@ namespace intuito.api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[1]; }
+      get { return global::intuito.api.greeter.Protos.GreetReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -482,7 +482,7 @@ namespace intuito.api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::intuito.api.Protos.GreetReflection.Descriptor.MessageTypes[2]; }
+      get { return global::intuito.api.greeter.Protos.GreetReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

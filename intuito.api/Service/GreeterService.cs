@@ -1,5 +1,5 @@
 ﻿using Grpc.Core;
-using intuito.api.Protos;
+using intuito.api.greeter.Protos;
 using intuito.application.interfaces.services;
 using intuito.application.models.DTOs;
 using intuito.domain.DTOs;

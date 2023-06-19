@@ -98,3 +98,5 @@ D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\obj\Debug\net6.0\r
 D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\obj\Debug\net6.0\intuito.api.pdb
 D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\obj\Debug\net6.0\intuito.api.genruntimeconfig.cache
 D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\obj\Debug\net6.0\ref\intuito.api.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+D:\Programas Practica\.net\GlobalHitss\Intuito-BE\intuito.api\bin\Debug\net6.0\StackExchange.Redis.dll

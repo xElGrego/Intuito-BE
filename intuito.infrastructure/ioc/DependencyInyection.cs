@@ -6,9 +6,11 @@ using intuito.infrastructure.data.repositories.greeter;
 using intuito.infrastructure.data.repositories.movie;
 using intuito.infrastructure.data.repositories.room;
 using intuito.infrastructure.data.repositories.seat;
+using intuito.infrastructure.data.repositories.user;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 using System.Data.SqlClient;
 using System.Reflection;
 
@@ -30,7 +32,8 @@ namespace intuito.infrastructure.ioc
             services.AddScoped<IBillboardRestRepository, BillboardRepository>();
             services.AddScoped<IBookingRestRepository, BookingRepository>();
             services.AddScoped<IGreeterRestRepository, GreeterRepository>();
-
+            services.AddScoped<IUserRestRepository, UserRepository>();
+            services.AddSingleton<IConnectionMultiplexer>(_ => ConnectionMultiplexer.Connect(configuration.GetValue<string>("RedisConnection")));
 
             services.AddDbContext<DataContext>(options =>
             {
@@ -43,4 +46,3 @@ namespace intuito.infrastructure.ioc
         }
     }
 }
-
