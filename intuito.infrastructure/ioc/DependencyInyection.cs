@@ -35,6 +35,8 @@ namespace intuito.infrastructure.ioc
             services.AddScoped<IUserRestRepository, UserRepository>();
             services.AddSingleton<IConnectionMultiplexer>(_ => ConnectionMultiplexer.Connect(configuration.GetValue<string>("RedisConnection")));
 
+            var nameCola = configuration.GetValue<string>("RedisColaName");
+
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlServer(builderConnection.ConnectionString);

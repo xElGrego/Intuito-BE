@@ -4,8 +4,8 @@ using intuito.application.models.DTOs;
 using intuito.application.models.exceptions;
 using intuito.domain.DTOs;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using StackExchange.Redis;
-using System.Text.Json;
 
 namespace intuito.infrastructure.data.repositories.user
 {
@@ -26,10 +26,13 @@ namespace intuito.infrastructure.data.repositories.user
         {
             try
             {
+                var nameCola = _configuration.GetValue<string>("RedisColaName");
+
                 var db = _connectionMultiplexer.GetDatabase();
                 Console.WriteLine("User" + user);
-                await db.StringSetAsync("1",JsonSerializer.Serialize(user));
+                var serializedUser = JsonConvert.SerializeObject(user);
 
+                await db.ListRightPushAsync(nameCola, serializedUser);
             }
             catch(Exception ex)
             {
@@ -43,20 +46,24 @@ namespace intuito.infrastructure.data.repositories.user
             return response;
         }
 
-        public async Task<UserDto> ObtenerUser(string key)
+        public async Task<UserDto> ObtenerUser(string cola)
         {
             UserDto userDto = new();
             try
             {
                 var db = _connectionMultiplexer.GetDatabase();
-                var value = await db.StringGetAsync(key);
 
-                if (!value.IsNull)
+                var queueLength = await db.ListLengthAsync(cola);
+                var serializedUsers = await db.ListRangeAsync(cola, 0, queueLength - 1);
+
+                var users = new List<UserDto>();
+                foreach (var serializedUser in serializedUsers)
                 {
-                    userDto = JsonSerializer.Deserialize<UserDto>(value);
-                    Console.WriteLine("");
+                    var user = JsonConvert.DeserializeObject<UserDto>(serializedUser);
+                    users.Add(user);
                 }
-            }
+                Console.WriteLine("Espera");
+             }
             catch (Exception ex)
             {
                 throw new IntuitoException(ex.Message);
